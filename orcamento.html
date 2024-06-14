@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/orcamento.css">
+    <title>orcamento</title>
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="cabecalho">
+                <a href="./index.html">
+                    <img src="./img/bikcraft.svg" alt="">
+                </a>
+                <nav class="menu">
+                    <ul class="nav-menu">
+                        <li><a href="bicicletas.html">Bicicletas</a></li>
+                        <li><a href="seguros.html">Seguros</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="budget">
+            <div class="budget-container">
+                <div class="budget-tittle-introduction">
+                    <h2>COTAÇÕES NO SEU EMAIL</h2>
+                    <h1>solicite um orçamento<span class="detalhe-ponto">.</span></h1>
+                </div>
+                <form class="form-budget" action="./">
+                    <div class="budget-product">
+                        <h2>Bikcraft ou Seguro?</h2>
+
+                        <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
+                        <label for="bikcraft">Bikcraft</label>
+
+                        <input type="radio" name="tipo" value="seguro" id="seguro">
+                        <label for="seguro">Seguro</label>
+
+                        <div class="budget-content" id="orcamento-bikcraft">
+                            <h2>Escola a sua</h2>
+                            <input type="radio" name="produto" value="nimbus" id="nimbus">
+                            <label for="nimbus">Nimbus Stark <span>R$ 4999</span> </label>
+                            
+                            <div class="budget-details">
+                                <ul>
+                                    <li>
+                                        <img src="./img/icons/eletrica.svg" alt="">
+                                        Motor Eletrico
+                                    </li>
+                                    <li>
+                                        <img src="./img/icons/carbono.svg" alt="">
+                                        Fibra de Carbono
+                                    </li>
+                                    <li>
+                                        <img src="./img/icons/velocidade.svg" alt="">
+                                        50 km/h
+                                    </li>
+                                    <li>
+                                        <img src="./img/icons/rastreador.svg" alt="">
+                                        Rastreador
+                                    </li>
+                                </ul>
+                                <img src="./img/nimbus.jpg" alt="">
+                            </div>
+
+                            <input type="radio" name="produto" value="magic" id="magic">
+                            <label for="magic">Magic Might <span>R$ 2999</span> </label>
+                            <div class="budget-details">
+                                <ul>
+                                    <li>
+                                        <img src="./img/icons/eletrica.svg" alt="">
+                                        Motor Eletrico
+                                    </li>
+                                    <li>
+                                        <img src="./img/icons/carbono.svg" alt="">
+                                        Fibra de Carbono
+                                    </li>
+                                    <li>
+                                        <img src="./img/icons/velocidade.svg" alt="">
+                                        45 km/h
+                                    </li>
+                                    <li>
+                                        <img src="./img/icons/rastreador.svg" alt="">
+                                        Rastreador
+                                    </li>
+                                </ul>
+                                <img src="./img/bicicletas/magic.jpg" alt="">
+                            </div>
+
+                            <input type="radio" name="produto" value="nebula" id="nebula">
+                            <label for="nebula">Nebula Cosmic <span>R$ 3999</span> </label>
+                            <div class="budget-details">
+                                <ul>
+                                    <li>
+                                        <img src="./img/icons/eletrica.svg" alt="">
+                                        Motor Eletrico
+                                    </li>
+                                    <li>
+                                        <img src="./img/icons/carbono.svg" alt="">
+                                        Fibra de Carbono
+                                    </li>
+                                    <li>
+                                        <img src="./img/icons/velocidade.svg" alt="">
+                                        40 km/h
+                                    </li>
+                                    <li>
+                                        <img src="./img/icons/rastreador.svg" alt="">
+                                        Rastreador
+                                    </li>
+                                </ul>
+                                <img src="./img/bicicletas/nebula.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="budget-content" id="orcamento-seguro">
+                            <h2>Escolha o plano</h2>
+                            <input type="radio" name="produto" value="prata" id="prata">
+                            <label for="prata">Prata<span>R$ 199</span> </label>
+
+                            <input type="radio" name="produto" value="ouro" id="ouro">
+                            <label for="ouro">Ouro<span>R$ 299</span> </label>
+                        </div>
+                    </div>
+
+                    <div class="budget-data form">
+                        <h2 class="budget-data-tittle">DADOS PESSOAIS</h2>
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome">
+                        </div>
+                        <div>
+                            <label for="Sobrenome">Sobrenome</label>
+                            <input type="text" id="sobrenome" name="sobrenome">
+                        </div>
+                        <div class="budget-data-cpf">
+                            <label for="CPF">CPF</label>
+                            <input type="text" id="CPF" placeholder="000.000.000-00"  name="CPF">
+                        </div>
+                        <div class="budget-data-email">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <h2 class="budget-data-tittle">ENTREGA</h2>
+                        <div>
+                            <label for="CEP">CEP</label>
+                            <input type="text" id="CEP"  name="CEP">
+                        </div>
+                        <div>
+                            <label for="numero">Numero</label>
+                            <input type="text" id="numero"  name="numero">
+                        </div>
+                        <div>
+                            <label for="logradouro">Logradouro</label>
+                            <input type="text" id="logradouro"  name="logradouro">
+                        </div>
+                        <div>
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="bairro"  name="bairro">
+                        </div>
+                        <div>
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade"  name="cidade">
+                        </div>
+                        <div>
+                            <label for="estado">Estado</label>
+                            <input type="text" id="estado"  name="estado">
+                        </div>
+                        <button>Solicitar Orçamento</button>
+                    </div>
+    
+                </form>
+            </div>
+            
+        </section>
+
+
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-content-logo">
+                        <img src="img/bikcraft.svg" alt="">
+                    </div>
+                    <div class="contact">
+                        <h1>CONTATO</h1>
+                        <div class="link-contact">
+                            <a href="">+55 21 9999-9999</a>
+                            <a href="">contato@bikcraft.com</a>
+                        </div>
+                        <ul>
+                            <li>Rua Ali Perto, 42 - Botafogo</li>
+                            <li>Rio de Janeiro - RJ</li>
+                        </ul>
+                        <div class="social-media">
+                            <img src="img/redes/instagram.svg" alt="">
+                            <img src="img/redes/facebook.svg" alt="">
+                            <img src="img/redes/youtube.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h1>INFORMAÇÕES</h1>
+                        <div class="nav-menu-footer">
+                            <a href="./bicicletas.html">Bicicletas</a>
+                            <a href="./seguros.html">Seguros</a>
+                            <a href="./contato.html">Contato</a>
+                            <a href="./termos.html">Termos e Condições</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="copyright">
+            <div class="copyright-container">
+                <h1>Bikcraft © Alguns direitos reservados.</h1>
+            </div>
+            
+        </section>
+    </footer>
+</body>
+</html>

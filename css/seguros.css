@@ -1,0 +1,535 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+img{
+    display: block;
+}
+ul{
+    text-decoration: none;
+}
+li{
+    text-decoration: none;
+    list-style-type: none 
+}
+a{
+    text-decoration: none;
+    font-family: var(--titulo);
+}
+.detalhe-ponto{
+    color: var(--cor-p1);
+}
+:root {
+    --cor-0: #ffffff;
+    --cor-1: #f7f7f7;
+    --cor-2: #ededed;
+    --cor-3: #dedede;
+    --cor-4: #cccccc;
+    --cor-5: #b2b2b2;
+    --cor-6: #9c9c9c;
+    --cor-7: #717171;
+    --cor-8: #595959;
+    --cor-9: #404040;
+    --cor-10: #2e2e2e;
+    --cor-11: #111111;
+    --cor-12: #000000;
+    --cor-p1: #ffbb00;
+    --cor-p2: #e4a30b;
+    --cor-p3: #a66f00;
+    --cor-p4: #664400;
+    --cor-p5: #332200;
+}
+:root{
+    --titulo: poppins, sans-serif;
+    --texto: roboto, sans-serif;
+    --grande: 4rem;
+    --grande2: 3rem; 
+    --medio-grande: 2rem;
+    --pequeno-medio: 1.5rem;
+    --pequeno-medio2: 1.125rem;
+    --pequeno: 1rem
+}
+/*header*/
+header{
+    background-color: var(--cor-12);
+    
+}
+.container-header{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+}
+.menu a{
+    color: var(--cor-0);
+    padding: 12px 0px;
+    border-radius: 4px;
+    font-size: var(--pequeno-medio2);
+    display: block;
+    position: relative;
+}
+.menu a:after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: var(--cor-0);
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+}
+.menu a:hover:after{
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .menu a{
+        background: var(--cor-11);
+        padding: 12px 16px;
+        width: 100%;
+    }
+    .nav-menu{
+        gap: 20px;
+    }
+    .menu a:after{
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .menu a{
+        font-size: var(--pequeno);
+        padding: 8px 12px;
+    }
+    .nav-menu{
+        gap: 20px;
+    }
+}
+@media (max-width: 500px){
+    .cabecalho{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+/*header*/
+/*seguros*/
+.security{
+    background-color: var(--cor-11);
+    
+}
+.security-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+.security-container p, h1, li{
+    color: var(--cor-0);
+}
+.security-tittle{
+    background: url(../img/dec/top-right.svg) no-repeat top  right  ;
+
+}
+.security-tittle h2{
+    font-family: var(--texto);
+    font-size: var(--pequeno-medio);
+    color: var(--cor-5);
+}
+.security-tittle h1{
+    font-size: var(--grande);
+    font-family: var(--titulo);
+    color: var(--cor-0);
+    line-height: 1.125;
+    margin-top: 4px;
+}
+.security-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-top: 40px;
+    align-items: start;
+    justify-content: center;
+}
+.security-all-cards{
+    background-color: var(--cor-12);
+    padding: 32px 32px 32px 60px;
+    border-radius: 4px;
+    
+}
+
+.security-all-cards li{
+    font-family: var(--texto);
+    font-size: var(--pequeno-medio2);
+    color: var(--cor-0);
+    line-height: 2.4;
+    position: relative;
+}
+.security-all-cards li::before{
+    content: "";
+    width: 13px;
+    height: 9px;
+    background-image: url(/img/icons/lista.svg);
+    position: absolute;
+    left: -31px;
+    bottom: 20px;
+}
+
+.silver{
+    font-family: var(--titulo);
+    font-size: var(--medio-grande);
+    color:var(--cor-6);
+    margin-bottom: 40px;
+}
+.gold{
+    font-family: var(--titulo);
+    font-size: var(--medio-grande);
+    color:var(--cor-p1);
+    margin-bottom: 40px; 
+}
+.plan-price{
+    display: flex;
+    justify-content: space-between;
+}
+.security-cards-price{
+    text-align: end;
+}
+.security-cards-price h1{
+    font-family: var(--titulo);
+    font-size: var(--medio-grande);
+    color:var(--cor-0);
+}
+.security-cards-price p{
+    font-family: var(--titulo);
+    font-size: 12px;
+    color:var(--cor-6);
+
+}
+.button-card1{
+    padding: 16px 32px;
+    font-size: var(--pequeno-medio2);
+    background-color: var(--cor-10);
+    color: var(--cor-0);
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.button-card2{
+    padding: 16px 32px;
+    font-size: var(--pequeno-medio2);
+    background-color: var(--cor-p1);
+    color: var(--cor-p5);
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+}
+@media (max-width: 1200px){
+    .security-tittle h1{
+        font-size: var(--grande2);
+    }
+    .security-tittle h2{
+        font-size: var(--pequeno-medio2);
+    }
+}
+@media (max-width: 800px){
+    .security-container{
+        padding: 40px 20px 60px 20px;
+    }
+    .security-tittle h1{
+        font-size: var(--medio-grande);
+    }
+    .security-tittle h2{
+        font-size: var(--pequeno);
+    }
+    .security-cards{
+        grid-template-columns: 1fr;
+    }
+    .silver{
+        font-size: var(--pequeno-medio);
+    }
+    .gold{
+        font-size: var(--pequeno-medio);
+    }
+    .security-cards-price h1{
+        font-size: var(--pequeno-medio);
+
+    }
+}
+@media (max-width: 600px){
+    .button-card1{
+        padding: 12px 16px;
+        font-size: var(--pequeno);
+    }
+    .button-card2{
+        padding: 12px 16px;
+        font-size: var(--pequeno);
+    }
+}
+/*seguros*/
+
+/*vantagens*/
+.benefits{
+    background-color: var(--cor-12);
+}
+.benefits-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px;
+}
+.benefits-tittle h1{
+    font-size: var(--grande);
+    font-family: var(--titulo);
+    color: var(--cor-0);
+    line-height: 1.125;
+}
+.benefits-content{
+    margin-top: 60px;
+    display: grid;
+    gap: 40px 80px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+}
+.benefits-content h1{
+    font-size: var(--pequeno-medio);
+    font-family: var(--titulo);
+    color: var(--cor-0);
+    margin-top: 8px;
+    font-weight: 500;
+}
+.benefits-content p{
+    font-size: var(--pequeno);
+    color: var(--cor-5);
+    font-family: var(--texto);
+    margin-top: 8px;
+    line-height: 1.5;
+}
+@media (max-width: 1200px){
+    .benefits-tittle h1{
+       font-size: var(--grande2); 
+    }
+}
+@media (max-width: 800px){
+    .benefits-tittle h1{
+        font-size: var(--medio-grande);
+    }
+    .benefits-content{
+        margin-top: 40px;
+    }
+    .benefits-container{
+        padding: 60px 20px;
+    }
+}
+
+/*vantagens*/
+
+
+
+/*perguntas frequentes*/
+.questions-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px;
+}
+.questions-content{
+    margin-top: 60px;
+}
+.questions-content li{
+    padding: 20px 20px 20px 40px;
+    border-radius: 4px;
+}
+.questions-content li:nth-child(odd){
+    background-color: var(--cor-1);
+}
+.questions-content-tittle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.questions-tittle h1{
+    font-size: var(--grande);
+    font-family: var(--titulo);
+    color: var(--cor-12);
+    line-height: 1.125;
+}
+.questions-content h1{
+    font-size: var(--pequeno-medio2);
+    color: var(--cor-11);
+    font-family: var(--titulo);
+    position: relative;
+}
+.questions-content h1::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    background-color: var(--cor-p1);
+    left: -18px;
+    bottom: 8px;
+    
+}
+.questions-content-tittle img{
+    display: block;
+    transition: 0.3s;
+
+}
+.questions-content-tittle:hover > img{
+    rotate: 180deg;
+}
+.questions-content p{
+    font-size: var(--pequeno);
+    color: var(--cor-9);
+    font-family: var(--texto);
+    margin-top: 16px;
+    max-width: 80ch;
+    line-height: 1.5;
+}
+@media (max-width: 1200px){
+    .questions-tittle h1{
+       font-size: var(--grande2); 
+    }
+}
+@media (max-width: 800px){
+    .questions-tittle h1{
+        font-size: var(--medio-grande);
+    }
+    .questions-content{
+        margin-top: 40px;
+    }
+    .questions-container{
+        padding: 60px 20px;
+    }
+}
+
+
+/*perguntas frequentes*/
+
+/*rodapé*/
+.footer{
+    background-color: var(--cor-12);
+}
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+.footer-container h1{
+    font-family: var(--texto);
+    color: var(--cor-0);
+    font-size: var(--pequeno-medio);
+    font-weight: 500;
+
+}
+.link-contact{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    
+}
+.link-contact a{
+    font-size: var(--pequeno-medio2);
+    color: var(--cor-5);
+    font-family: var(--texto);
+    margin-bottom: 16px;
+}
+.footer-container ul{
+    margin-top: 32px;
+}
+.footer-container li{
+    font-size: var(--pequeno-medio2);
+    color: var(--cor-5);
+    font-family: var(--texto);
+    margin-bottom: 16px;
+
+}
+.social-media{
+    display: flex;
+    gap: 30px;
+    margin-top: 32px;
+}
+.nav-menu-footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+.nav-menu-footer a{
+    font-size: var(--pequeno-medio2);
+    color: var(--cor-5);
+    font-family: var(--texto);
+    margin-bottom: 16px;
+}
+footer a:hover{
+    color: var(--cor-0);
+}
+@media (max-width: 1200px){
+    .contact h1, .info h1{
+        font-size: var(--pequeno-medio2);
+    }
+}
+@media (max-width: 800px){
+    .footer-content-logo{
+        display: none;
+    }
+    .footer-content{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 600px){
+    .footer-content{
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .footer-container ul {
+        margin-top: 20px;
+    }
+    .footer-container{
+        padding: 60px 20px 0px 20px;
+    }
+}
+
+
+/*rodapé*/
+
+
+/*copyright*/
+.copyright{
+    background-color: var(--cor-12);
+
+}
+.copyright-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+.copyright-container h1{
+    font-size: var(--pequeno-medio2);
+    color: var(--cor-5);
+    font-family: var(--texto);
+    font-weight: 400;
+}
+@media (max-width: 600px){
+    .copyright-container {
+        padding: 40px 20px;
+    }
+
+}
+/*copyright*/
